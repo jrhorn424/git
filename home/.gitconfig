@@ -49,9 +49,9 @@
     tool = Kaleidoscope
 [alias]
     co = checkout
-    promote = !$DOTS/bin/git-promote
-    wtf     = !$DOTS/bin/git-wtf
-    rank-contributers = !$DOTS/bin/git-rank-contributers
+    promote = !$HOME/bin/git-promote
+    wtf     = !$HOME/bin/git-wtf
+    rank-contributers = !$HOME/bin/git-rank-contributers
     count   = !git shortlog -sn
     # stage="!f() { ( [ -z $@ ] && git add -A || git add -A "$@" ) && git st; }; f"
     # unstage="!f() { ([ -z "$@" ] && (git reset -q HEAD > /dev/null 2>&1 || echo "first commit must be unfrozen file by file. better error message coming soon") || (git reset -q HEAD -- $@ > /dev/null 2>&1 || git rm -q --cached $@ ) ) && git st; }; f"
