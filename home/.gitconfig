@@ -1,0 +1,70 @@
+[user]
+    name = Jeffrey Horn
+    email = jrhorn424@gmail.com
+[credential]
+    helper = osxkeychain
+[github]
+    user = jrhorn424
+[core]
+    autocrlf = input
+    safecrlf = false
+    editor = vim
+    quotepath = false
+[apply]
+    whitespace = nowarn
+[help]
+    autocorrect = 1
+[pull]
+    rebase = true
+[push]
+    default = tracking
+[sendemail]
+    smtpserver = /usr/local/bin/msmtp
+[color]
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[difftool "Kaleidoscope"]
+    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+    tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+    cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+    trustExitCode = true
+[merge]
+    tool = Kaleidoscope
+[alias]
+    co = checkout
+    promote = !$DOTS/bin/git-promote
+    wtf     = !$DOTS/bin/git-wtf
+    rank-contributers = !$DOTS/bin/git-rank-contributers
+    count   = !git shortlog -sn
+    # stage="!f() { ( [ -z $@ ] && git add -A || git add -A "$@" ) && git st; }; f"
+    # unstage="!f() { ([ -z "$@" ] && (git reset -q HEAD > /dev/null 2>&1 || echo "first commit must be unfrozen file by file. better error message coming soon") || (git reset -q HEAD -- $@ > /dev/null 2>&1 || git rm -q --cached $@ ) ) && git st; }; f"
+    switch = !legit switch \"$@\"
+    branches = !legit branches
+    sprout = !legit sprout \"$@\"
+    unpublish = !legit unpublish \"$@\"
+    harvest = !legit harvest \"$@\"
+    sync = !legit sync \"$@\"
+    publish = !legit publish \"$@\"
+    graft = !legit graft \"$@\"
+[git-up "bundler"]
+    check = true
+    autoinstall = true
+[git-up "rebase"]
+    log-hook = "echo \"changes on $1:\"; git log --oneline --decorate $1..$2"
