@@ -1,4 +1,4 @@
 git
 ===
 
-Homeshick dotfiles for git
+Homeshick-compatible dotfiles for git
