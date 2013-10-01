@@ -1,6 +1,6 @@
 [user]
-    name = Jeffrey Horn
-    email = jrhorn424@gmail.com
+	name = Jeffrey Horn
+	email = jrhorn424@gmail.com
 [credential]
     helper = osxkeychain
 [github]
@@ -9,14 +9,14 @@
     autocrlf = input
     safecrlf = false
     editor = vim
-    quotepath = false
+	quotepath = false
 	excludesfile = /Users/jrhorn424/.global_ignore
 [apply]
     whitespace = nowarn
 [help]
     autocorrect = 1
 [pull]
-    rebase = true
+	rebase = true
 [push]
     default = tracking
 [sendemail]
@@ -49,23 +49,24 @@
 [merge]
     tool = Kaleidoscope
 [alias]
-    co = checkout
     promote = !$HOME/bin/git-promote
     wtf     = !$HOME/bin/git-wtf
     rank-contributers = !$HOME/bin/git-rank-contributers
     count   = !git shortlog -sn
-    # stage="!f() { ( [ -z $@ ] && git add -A || git add -A "$@" ) && git st; }; f"
-    # unstage="!f() { ([ -z "$@" ] && (git reset -q HEAD > /dev/null 2>&1 || echo "first commit must be unfrozen file by file. better error message coming soon") || (git reset -q HEAD -- $@ > /dev/null 2>&1 || git rm -q --cached $@ ) ) && git st; }; f"
-    switch = !legit switch \"$@\"
-    branches = !legit branches
-    sprout = !legit sprout \"$@\"
-    unpublish = !legit unpublish \"$@\"
-    harvest = !legit harvest \"$@\"
-    sync = !legit sync \"$@\"
-    publish = !legit publish \"$@\"
-    graft = !legit graft \"$@\"
+    stage="!f() { ( [ -z $@ ] && git add -A || git add -A "$@" ) && git st; }; f"
+    unstage="!f() { ([ -z "$@" ] && (git reset -q HEAD > /dev/null 2>&1 || echo "first commit must be unfrozen file by file. better error message coming soon") || (git reset -q HEAD -- $@ > /dev/null 2>&1 || git rm -q --cached $@ ) ) && git st; }; f"
+	switch = !legit switch \"$@\"
+	branches = !legit branches
+	sprout = !legit sprout \"$@\"
+	unpublish = !legit unpublish \"$@\"
+	harvest = !legit harvest \"$@\"
+	sync = !legit sync \"$@\"
+	publish = !legit publish \"$@\"
+	graft = !legit graft \"$@\"
 [git-up "bundler"]
     check = true
     autoinstall = true
 [git-up "rebase"]
     log-hook = "echo \"changes on $1:\"; git log --oneline --decorate $1..$2"
+[format]
+    pretty = oneline
