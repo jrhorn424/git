@@ -20,7 +20,7 @@ alias merge="git merge -no-ff" # on master,  meaningfully merge feature branch
 #
 # inspection
 #
-alias glog="git log --oneline --graph --all --decorate --abbrev-commit --date=relative --pretty"
+alias glog="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias gd='git diff'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
