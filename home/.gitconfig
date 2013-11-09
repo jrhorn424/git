@@ -73,3 +73,14 @@
     log-hook = "echo \"changes on $1:\"; git log --oneline --decorate $1..$2"
 [format]
     pretty = oneline
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[merge "gemfilelock"]
+  name = relocks the gemfile.lock
+  driver = bundle install
+[branch]
+	autosetuprebase = always
