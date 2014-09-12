@@ -1,6 +1,6 @@
 [user]
 	name = Jeffrey Horn
-	email = jeff@jrhorn.me
+	email = jeffh@generalassemb.ly
 [credential]
 	helper = osxkeychain
 [github]
@@ -9,7 +9,7 @@
 	autocrlf = input
 	safecrlf = false
 	quotepath = false
-	excludesfile = /Users/jrhorn424/.global_ignore
+	excludesfile = /Users/jeffh/.global_ignore
 [pull]
 	rebase = true
 [push]
