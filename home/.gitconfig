@@ -33,23 +33,19 @@
 	changed = green
 	untracked = cyan
 [alias]
-	wtf     = !$HOME/bin/git-wtf
-	switch = !legit switch \"$@\"
-	branches = !legit branches
-	sprout = !legit sprout \"$@\"
-	unpublish = !legit unpublish \"$@\"
-	harvest = !legit harvest \"$@\"
-	sync = !legit sync \"$@\"
-	publish = !legit publish \"$@\"
-	graft = !legit graft \"$@\"
+  credit = !$HOME/bin/git-credit
+  dm = !$HOME/bin/git-delete-local-merged
+  ahead = !$HOME/bin/git-notpushed
+  nuke = !$HOME/bin/git-nuke
+  undo = !$HOME/bin/git-undo
 [git-up "bundler"]
 	check = true
 	autoinstall = true
 [git-up "rebase"]
 	log-hook = "echo \"changes on $1:\"; git log --oneline --decorate $1..$2"
 [merge "gemfilelock"]
-  name = relocks the gemfile.lock
-  driver = bundle install
+	name = relocks the gemfile.lock
+	driver = bundle install
 [branch]
 	autosetuprebase = always
 [filter "media"]
