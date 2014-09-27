@@ -33,11 +33,11 @@
 	changed = green
 	untracked = cyan
 [alias]
-  credit = !$HOME/bin/git-credit
-  dm = !$HOME/bin/git-delete-local-merged
-  ahead = !$HOME/bin/git-notpushed
-  nuke = !$HOME/bin/git-nuke
-  undo = !$HOME/bin/git-undo
+	credit = !$HOME/bin/git-credit
+	dm = !$HOME/bin/git-delete-local-merged
+	ahead = !$HOME/bin/git-notpushed
+	nuke = !$HOME/bin/git-nuke
+	undo = !$HOME/bin/git-undo
 [git-up "bundler"]
 	check = true
 	autoinstall = true
