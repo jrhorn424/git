@@ -18,3 +18,8 @@ alias gcam='git commit -Am'
 #
 alias gco='git checkout'
 alias gb='git branch'
+
+#
+# convenience
+#
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
