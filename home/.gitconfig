@@ -68,3 +68,5 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[ghi]
+	token = !security find-internet-password -a jrhorn424 -s github.com -l 'ghi token' -w
