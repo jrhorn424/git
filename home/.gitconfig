@@ -10,6 +10,7 @@
 	safecrlf = false
 	quotepath = false
 	excludesfile = /Users/jeffh/.global_ignore
+	editor = atom --wait
 [pull]
 	rebase = true
 [push]
