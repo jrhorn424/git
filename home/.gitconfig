@@ -46,5 +46,7 @@
 	required = true
 [ghi]
 	token = !security find-internet-password -a jrhorn424 -s github.com -l 'ghi token' -w
+[hub]
+	host = git.generalassemb.ly
 [color]
 	ui = false
