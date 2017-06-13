@@ -15,24 +15,6 @@
 	rebase = true
 [push]
 	default = current
-[color]
-	ui = auto
-	diff = auto
-	status = auto
-	branch = auto
-[color "branch"]
-	current = yellow reverse
-	local = yellow
-	remote = green
-[color "diff"]
-	meta = yellow bold
-	frag = magenta bold
-	old = red bold
-	new = green bold
-[color "status"]
-	added = yellow
-	changed = green
-	untracked = cyan
 [git-up "bundler"]
 	check = true
 	autoinstall = true
@@ -64,3 +46,5 @@
 	required = true
 [ghi]
 	token = !security find-internet-password -a jrhorn424 -s github.com -l 'ghi token' -w
+[color]
+	ui = false
