@@ -49,7 +49,7 @@
 [hub]
 	host = git.generalassemb.ly
 [color]
-	ui = false
+	ui = true
 [http]
 	proxy = http://localhost:3128
 [https]
