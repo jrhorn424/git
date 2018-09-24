@@ -49,4 +49,4 @@
 [hub]
 	host = git.generalassemb.ly
 [color]
-	ui = false
+	ui = true
