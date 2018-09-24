@@ -1,7 +1,6 @@
 [user]
 	name = Jeffrey Horn
-	email = jeff@jrhorn.me
-	signingkey = A2D272CFF38DB3A7
+	email = jeff.horn@libertymutual.com
 [credential]
 	helper = osxkeychain
 [github]
